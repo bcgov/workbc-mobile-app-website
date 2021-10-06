@@ -211,11 +211,6 @@ parameters:
   name: VOLUME_NAME
   required: false
   value: nginx-config
-- description: The API URL to pass requests to 
-  displayName: API URL
-  name: API_URL
-  required: true
-  value: ''
 - description: URL for email
   displayName: Client URL
   name: OPENSHIFT_NODEJS_CLIENTURL
