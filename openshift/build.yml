@@ -46,8 +46,6 @@ objects:
     source:
       git:
         uri: ${SOURCE_REPOSITORY_URL}
-        ref: ${SOURCE_REPOSITORY_REF}
-      contextDir: ${SOURCE_CONTEXT_DIR}
       type: Git
     strategy:
       sourceStrategy:
@@ -99,8 +97,9 @@ objects:
     strategy:
       dockerStrategy:
         from:
-          kind: DockerImage
-          name: 'docker.io/nginxinc/nginx-unprivileged:1.18-alpine'
+          kind: ImageStreamTag
+          namespace: ${IMAGE_NAMESPACE}
+          name: 'nginx-unprivileged:1.18-alpine'
       type: Docker
     triggers:
     - imageChange:
@@ -136,7 +135,7 @@ parameters:
   displayName: SOURCE_REPOSITORY_URL
   name: SOURCE_REPOSITORY_URL
   required: true
-  value: https://github.com/bcgov/elmsd-forms.git
+  value: git@github.com:bcgov-elmsd/workbc-mobile-app-website
 - description: SOURCE_REPOSITORY_REF
   displayName: SOURCE_REPOSITORY_REF
   name: SOURCE_REPOSITORY_REF
@@ -152,3 +151,8 @@ parameters:
   name: REACT_APP_IOS
   required: true
   value: ''
+- description: The namespace of the OS project containing the imagestreams
+  displayName: Image Namespace
+  name: IMAGE_NAMESPACE
+  required: true
+  value: myproject-tools
