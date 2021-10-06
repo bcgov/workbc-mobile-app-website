@@ -31,7 +31,7 @@ function Header () {
             <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
               <div className="navbar-nav">
                 <a className="nav-item nav-link" href="/">Home</a>
-                <a className="nav-item nav-link" href="/PrivacyAndTermsOfUse">Privacy and Terms of Use</a>
+                <a className="nav-item nav-link" href="/PrivacyAndLicenseAgreement">Privacy and License Agreement</a>
               </div>
             </div>
           </div>

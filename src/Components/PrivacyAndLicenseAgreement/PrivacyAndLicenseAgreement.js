@@ -1,6 +1,6 @@
 import React from 'react'
 
-function PrivacyPolicy() {
+function PrivacyAndLicenseAgreement() {
     return (
         <div className="container">
             <div className="row">
@@ -13,4 +13,4 @@ function PrivacyPolicy() {
     )
 }
 
-export default PrivacyPolicy;
+export default PrivacyAndLicenseAgreement;

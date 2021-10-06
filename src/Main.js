@@ -1,7 +1,7 @@
 import React from 'react'
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
 import Home from './Home'
-import PrivacyPolicy from './Components/PrivacyAndTermsOfUse/PrivacyAndTermsOfUse'
+import PrivacyAndLicenseAgreement from './Components/PrivacyAndLicenseAgreement/PrivacyAndLicenseAgreement'
 import BCeIDLanding from './Components/BCeIDLanding/BCeIDLanding'
 
 function Main() {
@@ -9,7 +9,7 @@ function Main() {
         <main role="main">
             <Router>
                 <Switch>
-                    <Route path="/PrivacyAndTermsOfUse" component={PrivacyPolicy} />
+                    <Route path="/PrivacyAndLicenseAgreement" component={PrivacyAndLicenseAgreement} />
                     <Route path="/BCeIDLanding" component={BCeIDLanding} />
                     <Route path="/" component={Home} />
                 </Switch>
