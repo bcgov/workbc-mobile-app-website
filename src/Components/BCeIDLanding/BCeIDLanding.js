@@ -10,8 +10,8 @@ function BCeIDLanding() {
                     <p>Please click the link below to go back to the mobile application, then login with your BCeID.</p>
                     <OpenApp
                         href="/BCeIDLanding"
-                        android="workbc://app"
-                        ios="ca.bc.gov.workbc.test"
+                        android={`${process.env.REACT_APP_ANDROID}`}
+                        ios={`${process.env.REACT_APP_IOS}`}
                     >
                         Continue
                     </OpenApp>
