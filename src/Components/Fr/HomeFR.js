@@ -2,12 +2,12 @@ import React from 'react'
 //import screen1 from '../public/images/screens/WorkBCAppSiteScreensEn1.png'
 
 
-function Home() {
+function HomeFR() {
     return (
         <div className="container">
             <div className="row">
                 <div className="col-md-12">
-                    <h1>WorkBC App</h1>
+                    <h1>WorkBC App - FRENCH</h1>
                     <div>
                         <ul className="nav nav-tabs mb-2" role="tablist">
                             <li className="nav-item">
@@ -252,4 +252,4 @@ function Home() {
     )
 }
 
-export default Home;
+export default HomeFR;

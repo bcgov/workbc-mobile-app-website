@@ -26,14 +26,12 @@ function Header () {
               <span className="navbar-toggler-icon"></span>
             </button>
             <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
-              <ul className="navbar-nav">
-                <li className="nav-item"><a className="nav-link" href="/">Home</a></li>
-                <li className="nav-item"><a className="nav-link" href="/PrivacyAndLicenseAgreement">End User License Agreement</a></li>
-              </ul>
+              <div className="navbar-nav">
+                <a className="nav-item nav-link" href="/">Home</a>
+                <a className="nav-item nav-link" href="/PrivacyAndLicenseAgreement">End User License Agreement</a>
+                <a className="nav-item nav-link" href="/fr/">Français</a>
+              </div>
             </div>
-            <ul className="navbar-nav justify-content-end">
-                <li className="nav-item"><a className="nav-link" href="/HomeFR">Français</a></li>
-            </ul>
           </div>
         </nav>
       </header>
