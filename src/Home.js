@@ -1,6 +1,4 @@
 import React from 'react'
-//import screen1 from '../public/images/screens/WorkBCAppSiteScreensEn1.png'
-
 
 function Home() {
     return (
@@ -185,7 +183,6 @@ function Home() {
                                                             className="img-fluid d-none d-md-block"
                                                             src="/images/stores/App-Store-Badge-en.svg"
                                                             width="42% \9"
-                                                            //height="40px"
                                                             alt="App Store WorkBC app download link" />
                                                         </a>
                                                     </div>
@@ -197,7 +194,6 @@ function Home() {
                                                             className="img-fluid d-none d-md-block"
                                                             src="/images/stores/google-play-badge-en.svg"
                                                             width="48% \9"
-                                                            //height="41.99px"
                                                             alt="Google Play WorkBC app download link" />
                                                         </a>
                                                     </div>

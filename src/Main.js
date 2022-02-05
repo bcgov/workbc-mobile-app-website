@@ -14,8 +14,8 @@ function Main() {
                     <Route path="/PrivacyAndLicenseAgreement" component={PrivacyAndLicenseAgreement} />
                     <Route path="/PrivacyAndLicenseAgreementFR" component={PrivacyAndLicenseAgreementFR} />
                     <Route path="/BCeIDLanding" component={BCeIDLanding} />
-                    <Route path="/" component={Home} />
                     <Route path="/HomeFR" component={HomeFR} />
+                    <Route path="/" component={Home} />
                 </Switch>
             </Router>
         </main>
