@@ -1,7 +1,13 @@
-import React from 'react'
+import React, {useState} from 'react'
 import HomeFR from './Components/Fr/HomeFR';
 
 function Home(props) {
+    props.setLanguage("en")
+    const [activeTab, setActiveTab] = useState(0)
+    const handleClickActiveTab = (e) => {
+        setActiveTab(e)
+    }
+   
     return (
         props.language === "fr" ? <HomeFR {...props} /> :
         <div className="container">
@@ -11,21 +17,21 @@ function Home(props) {
                     <div>
                         <ul className="nav nav-tabs mb-2" role="tablist">
                             <li className="nav-item">
-                                <a className="nav-link active show" id="home-tab" data-toggle="tab" href="#home">WorkBC App</a>
+                                <a className={activeTab === 0? 'nav-link active show': 'nav-link'} data-tab="0" id="home-tab" data-toggle="tab" href="#home" onClick={()=>{handleClickActiveTab(0)}}>WorkBC App</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" id="setup-tab" data-toggle="tab" href="#setup">Set up</a>
+                                <a className={activeTab === 1? 'nav-link active show': 'nav-link'} data-tab="1"  id="setup-tab" data-toggle="tab" href="#setup" onClick={()=>{handleClickActiveTab(1)}}>Set up</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" id="download-tab" data-toggle="tab" href="#download">Download</a>
+                                <a className={activeTab === 2? 'nav-link active show': 'nav-link'} data-tab="2" id="download-tab" data-toggle="tab" href="#download" onClick={()=>{handleClickActiveTab(2)}}>Download</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" id="auth-tab" data-toggle="tab" href="#auth">Authentication</a>
+                                <a className={activeTab === 3? 'nav-link active show': 'nav-link'} data-tab="3" id="auth-tab" data-toggle="tab" href="#auth" onClick={()=>{handleClickActiveTab(3)}}>Authentication</a>
                             </li>
                         </ul>
                         <div id="myTabContent" className="tab-content">
-                            <div className="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-                                    <p>The <strong>WorkBC app</strong> provides British Columbians with a way to apply for and access WorkBC services and supports. You can securely message your employment counsellor, view your case details, access the WorkBC job board, and track and action items on your to-do list.</p>
+                            <div className={activeTab === 0? 'tab-pane fade active show': 'tab-pane fade'} id="home" aria-labelledby="home-tab">
+                                    <p>The <strong>WorkBC app</strong> provides B.C. residents with a way to apply for and access WorkBC services and supports. You can securely message your employment counsellor, view your case details, access the WorkBC job board, and track and action items on your to-do list.</p>
                                     <div className="row">
                                         <div className="col-md-4">
                                             <img 
@@ -88,7 +94,7 @@ function Home(props) {
                                         </div>
                                     </div>
                             </div>
-                            <div className="tab-pane fade" id="setup">
+                            <div className={activeTab === 1? 'tab-pane fade active show': 'tab-pane fade'}  id="setup">
                                 <h2>How to set up the app</h2>
                                 <div className="row">
                                         <div className="col-md-12">
@@ -101,8 +107,7 @@ function Home(props) {
                                                 </div>
                                                 <div className="col-md-10">
                                                     <ol>
-                                                        {/* <li><a href="/Home#download">Download</a> the WorkBC app</li> */}
-                                                        <li>Download the WorkBC app</li>
+                                                        <li><a href="#download" data-tab="2" onClick={()=>{handleClickActiveTab(2)}}>Download</a> the WorkBC app</li>
                                                         <li>Open the app</li>
                                                         <li>Select <strong>Let's Get Started</strong> to start directly in the app, or <strong>See What You Can Do</strong> to take a short tour of WorkBC services</li>
                                                         <li>Review and accept the <a href="/PrivacyAndLicenseAgreement">End User License Agreement</a> for the app</li>
@@ -138,7 +143,7 @@ function Home(props) {
                                 
                                  
                             </div>
-                            <div className="tab-pane fade" id="download">
+                            <div className={activeTab === 2? 'tab-pane fade active show': 'tab-pane fade'}  id="download">
                                 <h2>WorkBC App</h2>
                                 <p>The WorkBC app gets you where you need to go. Download the app to access WorkBC services and supports.</p>
                                     <div className="row">
@@ -217,7 +222,7 @@ function Home(props) {
                                     <p>Apple, the Apple logo, iPhone, and iPod touch are trademarks of Apple Inc., registered in the U.S. and other countries. App Store is a service mark of Apple Inc., registered in the U.S. and other countries.</p>
                                     <p>iOS is a trademark or registered trademark of Cisco in the U.S. and other countries and is used under license.</p>
                             </div>
-                            <div className="tab-pane fade" id="auth">
+                            <div className={activeTab === 3? 'tab-pane fade active show': 'tab-pane fade'}  id="auth">
                                 <h2>Authentication</h2>
                                 <p>In order to access WorkBC online services, you must confirm your identity through one of the following forms: <strong>BC Services Card</strong> or <strong className="text-muted">Basic BCeID</strong>. </p><br/>
                                 <h3 className="text-primary">BC Services Card</h3>

@@ -1,8 +1,13 @@
-import React from 'react'
+import React, {useState} from 'react'
 import Home from '../../Home';
 
 function HomeFR(props) {
     props.setLanguage("fr")
+    const [activeTab, setActiveTab] = useState(0)
+    const handleClickActiveTab = (e) => {
+        setActiveTab(e)
+    }
+   
     return (
         props.language === "en" ? <Home {...props} /> :
         <div className="container">
@@ -12,20 +17,20 @@ function HomeFR(props) {
                     <div>
                         <ul className="nav nav-tabs mb-2" role="tablist">
                             <li className="nav-item">
-                                <a className="nav-link active show" id="home-tab" data-toggle="tab" href="#home">WorkBC App</a>
+                                <a className={activeTab === 0? 'nav-link active show': 'nav-link'} id="home-tab" data-toggle="tab" href="#homeFR"onClick={()=>{handleClickActiveTab(0)}}>WorkBC App</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" id="setup-tab" data-toggle="tab" href="#setup">Installer</a>
+                                <a className={activeTab === 1? 'nav-link active show': 'nav-link'} id="setup-tab" data-toggle="tab" href="#setupFR"onClick={()=>{handleClickActiveTab(1)}}>Installer</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" id="download-tab" data-toggle="tab" href="#download">Télécharger</a>
+                                <a className={activeTab === 2? 'nav-link active show': 'nav-link'} id="download-tab" data-toggle="tab" href="#downloadFR"onClick={()=>{handleClickActiveTab(2)}}>Télécharger</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" id="auth-tab" data-toggle="tab" href="#auth">Authentification</a>
+                                <a className={activeTab === 3? 'nav-link active show': 'nav-link'} id="auth-tab" data-toggle="tab" href="#authFR"onClick={()=>{handleClickActiveTab(3)}}>Authentification</a>
                             </li>
                         </ul>
                         <div id="myTabContent" className="tab-content">
-                            <div className="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                            <div className={activeTab === 0? 'tab-pane fade active show': 'tab-pane fade'} id="homeFR" role="tabpanel" aria-labelledby="home-tab">
                                     <p>La <strong>WorkBC app</strong> donne aux Britanno-Colombiens un moyen d’accéder aux services et aux mesures de soutien de WorkBC et d’en faire la demande. Vous pouvez communiquer en toute sécurité avec votre conseiller en emploi, visualiser les détails de votre dossier, consulter le tableau d’offres d’emploi de WorkBC, suivre et gérer les éléments de votre liste de choses à faire.</p>
                                     <div className="row">
                                         <div className="col-md-4">
@@ -89,7 +94,7 @@ function HomeFR(props) {
                                         </div>
                                     </div>
                             </div>
-                            <div className="tab-pane fade" id="setup">
+                            <div className={activeTab === 1? 'tab-pane fade active show': 'tab-pane fade'} id="setupFR">
                                 <h2>Comment installer l’application</h2>
                                 <div className="row">
                                         <div className="col-md-12">
@@ -102,8 +107,7 @@ function HomeFR(props) {
                                                 </div>
                                                 <div className="col-md-10">
                                                     <ol>
-                                                        {/* <li><a href="#download">Téléchargez</a> la WorkBC app</li> */}
-                                                        <li>Téléchargez la WorkBC app</li>
+                                                        <li><a href="#downloadFR" data-tab="2" onClick={()=>{handleClickActiveTab(2)}}>Téléchargez</a> la WorkBC app</li>
                                                         <li>Ouvrez l’appli</li>
                                                         <li>Sélectionnez <strong>Allons-y</strong> pour vous servir directement de l’application, ou <strong>Voir ce que vous pouvez faire</strong> pour avoir une idée des services de WorkBC</li>
                                                         <li>Lisez et acceptez le <a href="/PrivacyAndLicenseAgreementFR">contrat de licence d’utilisateur final</a> de l’application</li>
@@ -139,7 +143,7 @@ function HomeFR(props) {
                                 
                                  
                             </div>
-                            <div className="tab-pane fade" id="download">
+                            <div className={activeTab === 2? 'tab-pane fade active show': 'tab-pane fade'} id="downloadFR">
                                 <h2>WorkBC App</h2>
                                 <p>La WorkBC app vous mène là où vous devez aller. Téléchargez-la pour accéder aux services et aux mesures de soutien de WorkBC.</p>
                                     <div className="row">
@@ -210,7 +214,7 @@ function HomeFR(props) {
                                     <p>Apple, le logo d’Apple, iPhone et iPod touch sont des marques déposées d’Apple Inc. aux États-Unis et dans d’autres pays. App Store est une marque de service d’Apple Inc. déposée aux États-Unis et dans d’autres pays.</p>
                                     <p>iOS est une marque de commerce ou une marque déposée de Cisco aux États-Unis et dans d’autres pays et est utilisée sous licence.</p>
                             </div>
-                            <div className="tab-pane fade" id="auth">
+                            <div className={activeTab === 3? 'tab-pane fade active show': 'tab-pane fade'} id="auth">
                                 <h2>Authentification</h2>
                                 <p>Pour accéder aux Services en ligne de WorkBC, vous devez confirmer votre identité par l’un des moyens suivants : la <strong>BC Services Card</strong> ou un <strong className="text-muted">Basic BCeID</strong>. </p><br/>
                                 <h3 className="text-primary">BC Services Card</h3>
