@@ -31,7 +31,7 @@ function Home(props) {
                         </ul>
                         <div id="myTabContent" className="tab-content">
                             <div className={activeTab === 0? 'tab-pane fade active show': 'tab-pane fade'} id="home" aria-labelledby="home-tab">
-                                    <p>The <strong>WorkBC app</strong> provides B.C. residents with a way to apply for and access WorkBC services and supports. You can securely message your employment counsellor, view your case details, access the WorkBC job board, and track and action items on your to-do list.</p>
+                                    <p>The <strong>WorkBC app</strong> provides British Columbians with a way to apply for and access WorkBC services and supports. You can securely message your employment counsellor, view your case details, access the WorkBC job board, and track and action items on your to-do list.</p>
                                     <div className="row">
                                         <div className="col-md-4">
                                             <img 
