@@ -1,8 +1,10 @@
 import React from 'react'
+import Home from '../../Home';
 
-
-function HomeFR() {
+function HomeFR(props) {
+    props.setLanguage("fr")
     return (
+        props.language === "en" ? <Home {...props} /> :
         <div className="container">
             <div className="row">
                 <div className="col-md-12">
@@ -26,29 +28,26 @@ function HomeFR() {
                             <div className="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
                                     <p>La <strong>WorkBC app</strong> donne aux Britanno-Colombiens un moyen d’accéder aux services et aux mesures de soutien de WorkBC et d’en faire la demande. Vous pouvez communiquer en toute sécurité avec votre conseiller en emploi, visualiser les détails de votre dossier, consulter le tableau d’offres d’emploi de WorkBC, suivre et gérer les éléments de votre liste de choses à faire.</p>
                                     <div className="row">
-                                        <div className="col-md-3">
+                                        <div className="col-md-4">
                                             <img 
-                                            className="img-fluid d-none d-md-block"
+                                            className="w-50"
                                             src="/images/screens/WorkBCAppSiteFr1.png"
-                                            width="200px"
-                                            height="404px"
                                             alt="Allons-y capture d'écran" />
+                                            <br/><br/>
                                         </div>
-                                        <div className="col-md-3">
+                                        <div className="col-md-4">
                                             <img 
-                                            className="img-fluid d-none d-md-block"
+                                            className="w-50"
                                             src="/images/screens/WorkBCAppSiteFr2.png"
-                                            width="200px"
-                                            height="404px"
                                             alt="Que souhaitez-vous fair aujourd'hui capture d'écran" />
+                                            <br/><br/>
                                         </div>
-                                        <div className="col-md-3">
+                                        <div className="col-md-4">
                                             <img 
-                                            className="img-fluid d-none d-md-block"
+                                            className="w-50"
                                             src="/images/screens/WorkBCAppSiteFr3.png"
-                                            width="200px"
-                                            height="404px"
                                             alt="Offres d'emploi capture d'écran" />
+                                            <br/><br/>
                                         </div>
                                     </div>
                                     <div>
@@ -59,41 +58,31 @@ function HomeFR() {
                                     <div className="row">
                                         <div className="col-md-6">
                                             <div className="row">
-                                                <div className="col-2 col-md-6 col-xs-12">
-                                                    <div>
-                                                        <h4>Pour iOS (iPhone ou iPad)</h4>
-                                                    </div>
+                                                <div className="col">
+                                                    <h4>Pour iOS (iPhone ou iPad)</h4>
                                                 </div>
-                                                <div className="col-2 col-md-6 col-xs-12">
-                                                    <div>
-                                                        <h4>Pour les appareils mobiles Android</h4>
-                                                    </div>
+                                                <div className="col">
+                                                    <h4>Pour les appareils mobiles Android</h4>
                                                 </div>
                                             </div>
                                             <div className="row">
-                                                <div className="col-2 col-md-6 col-xs-12">
-                                                    <div>
-                                                        <a href="https://apps.apple.com/us/app/workbc/id1581502913">
+                                                <div className="col">
+                                                    <a href="https://apps.apple.com/us/app/workbc/id1581502913">
                                                             <img 
-                                                            className="img-fluid d-none d-md-block"
                                                             src="/images/stores/App-Store-Badge-fr.svg"
-                                                            width="58% \9"
+                                                            //width="58% \9"
                                                             height="40px"
                                                             alt="Lien de téléchargement de la WorkBC app - L'App Store" />
-                                                        </a>
-                                                    </div>
+                                                    </a>
                                                 </div>
-                                                <div className="col-2 col-md-6 col-xs-12">
-                                                    <div>
-                                                        <a href="https://play.google.com/store/apps/details?id=ca.bc.gov.workbc">
+                                                <div className="col">
+                                                    <a href="https://play.google.com/store/apps/details?id=ca.bc.gov.workbc">
                                                             <img 
-                                                            className="img-fluid d-none d-md-block"
                                                             src="/images/stores/google-play-badge-fr.svg"
-                                                            width="63% \9"
+                                                            //width="63% \9"
                                                             height="41.99px"
                                                             alt="Lien de téléchargement de la WorkBC app - Google Play" />
-                                                        </a>
-                                                    </div>
+                                                    </a>
                                                 </div>
                                             </div>
                                             
@@ -109,11 +98,12 @@ function HomeFR() {
                                                    <img 
                                                             className="img-thumbnail"
                                                             src="/images/screens/WorkBCLogo-fr.svg"
-                                                            alt="WorkBC app logo" />
+                                                            alt="Logo de la WorkBC app" />
                                                 </div>
                                                 <div className="col-md-10">
                                                     <ol>
-                                                        <li><a href="../#download">Téléchargez</a> la WorkBC app</li>
+                                                        {/* <li><a href="#download">Téléchargez</a> la WorkBC app</li> */}
+                                                        <li>Téléchargez la WorkBC app</li>
                                                         <li>Ouvrez l’appli</li>
                                                         <li>Sélectionnez <strong>Allons-y</strong> pour vous servir directement de l’application, ou <strong>Voir ce que vous pouvez faire</strong> pour avoir une idée des services de WorkBC</li>
                                                         <li>Lisez et acceptez le <a href="/PrivacyAndLicenseAgreementFR">contrat de licence d’utilisateur final</a> de l’application</li>
@@ -129,19 +119,18 @@ function HomeFR() {
                                         <div className="col-md-12">
                                             <div className="row">
                                                 <div className="col-md-2">
-                                                   <img 
-                                                            className="img-fluid d-none d-md-block"
-                                                            src="/images/screens/WorkBCAppSiteFr2.png"
-                                                            width="200px"
-                                                            height="404px"
-                                                            alt="Que souhaitez-vous fair aujourd'hui capture d'écran" />
+                                                    <img 
+                                                        className="w-75"
+                                                        src="/images/screens/WorkBCAppSiteFr2.png"
+                                                        alt="Que souhaitez-vous fair aujourd'hui capture d'écran" />
+                                                    <br/><br/>
                                                 </div>
                                                 <div className="col-md-10">
                                                     <ol>
                                                         <li>J'<strong>ai</strong> un compte – Sélectionnez cette option si vous êtes déjà client des Services à l’emploi de WorkBC et avez actuellement ou avez déjà eu un compte auprès des Services à l’emploi en ligne.</li>
                                                         <li>Je <strong>n'ai pas</strong> de compte – Cette option est pour les nouveaux clients des Services de WorkBC qui doivent présenter une demande ou pour les clients de WorkBC qui ne sont pas encore inscrits auprès des Services à l’emploi en ligne. Notez que vous aurez besoin de votre <strong><a href="https://www2.gov.bc.ca/gov/content/governments/government-id/bcservicescardapp">BC Services Card</a></strong> ou d’un <a href="https://www.bceid.ca">Basic BCeID</a> aux fins d’authentification.</li>
                                                         <li>Je souhaite continuer en tant qu'<strong>invité</strong> – Si vous souhaitez vous informer des fonctionnalités de l’application sans vous connecter ni créer de compte, choisissez cette option.</li>
-                                                        <li>Je <strong>ne sais pas</strong> si j'ai un compte – Si vous n’êtes pas sûr d’avoir un compte auprès des Services en ligne de WorkBC, saisissez quelques renseignements pour le vérifier.</li>
+                                                        <li>Je <strong>ne sais pas</strong> si j'ai un compte – Si vous n’êtes pas sûr d’avoir un compte auprès des Services en ligne de WorkBC, saisissez quelques renseignements pour le savoir.</li>
                                                     </ol>
                                                 </div>
                                             </div>
@@ -163,60 +152,50 @@ function HomeFR() {
                                     </div>
                                     <br/><br/>
                                     <div className="row">
-                                        <div className="col-md-12">
+                                        <div className="col-md-6">
                                             <div className="row">
-                                                <div className="col-md-4">
-                                                    <div>
-                                                        <h4>Pour iOS (iPhone ou iPad)</h4>
-                                                    </div>
+                                                <div className="col">
+                                                    <h4>Pour iOS (iPhone ou iPad)</h4>
                                                 </div>
-                                                <div className="col-md-4">
-                                                    <div>
-                                                        <h4>Pour les appareils mobiles Android</h4>
-                                                    </div>
+                                                <div className="col">
+                                                    <h4>Pour les appareils mobiles Android</h4>
                                                 </div>
                                             </div>
                                             <div className="row">
-                                                <div className="col-md-4">
-                                                    <div>
-                                                        <a href="https://apps.apple.com/us/app/workbc/id1581502913">
+                                                <div className="col">
+                                                    <a href="https://apps.apple.com/us/app/workbc/id1581502913">
                                                             <img 
-                                                            className="img-fluid d-none d-md-block"
                                                             src="/images/stores/App-Store-Badge-fr.svg"
-                                                            width="42% \9"
+                                                            //width="42% \9"
+                                                            height="40px"
                                                             alt="Lien de téléchargement de la WorkBC app - L'App Store" />
-                                                        </a>
-                                                    </div>
+                                                    </a>
                                                 </div>
-                                                <div className="col-md-4">
-                                                    <div>
-                                                        <a href="https://play.google.com/store/apps/details?id=ca.bc.gov.workbc">
+                                                <div className="col">
+                                                    <a href="https://play.google.com/store/apps/details?id=ca.bc.gov.workbc">
                                                             <img 
-                                                            className="img-fluid d-none d-md-block"
                                                             src="/images/stores/google-play-badge-fr.svg"
-                                                            width="48% \9"
+                                                            //width="48% \9"
+                                                            height="41.99px"
                                                             alt="Lien de téléchargement de la WorkBC app - Google Play" />
-                                                        </a>
-                                                    </div>
+                                                    </a>
                                                 </div>
                                             </div>
                                             <br/>
                                             <div className="row">
-                                                <div className="col-md-4">
+                                                <div className="col">
                                                     <div>
-                                                        <p>Les systèmes d’exploitation suivants sont pris en charge :</p>
                                                         <ul>
-                                                            <li>iOS 11 et versions supérieures</li>
-                                                            <li>Les versions bêta ne sont pas prises en charge</li>
+                                                            <li>Les systèmes d'exploitation iOS 11 et versions supérieurs sont pris en charge</li>
+                                                            <li>Les versions bêta <u>ne sont pas</u> prises en charge</li>
                                                         </ul>
                                                     </div>
                                                 </div>
-                                                <div className="col-md-4">
+                                                <div className="col">
                                                     <div>
-                                                        <p>Les systèmes d’exploitation suivants sont pris en charge :</p>
                                                         <ul>
-                                                            <li>Android 6 et versions supérieures</li>
-                                                            <li>Les versions bêta ne sont pas prises en charge</li>
+                                                            <li>Les systèmes d'exploitation Android 6 et versions supérieures sont pris en charge</li>
+                                                            <li>Les versions bêta <u>ne sont pas</u> prises en charge</li>
                                                         </ul>
                                                     </div>
                                                 </div>
@@ -233,11 +212,11 @@ function HomeFR() {
                             </div>
                             <div className="tab-pane fade" id="auth">
                                 <h2>Authentification</h2>
-                                <p>Pour accéder aux Services en ligne de WorkBC, vous devez prouver votre identité par l’un des moyens suivants : la <strong>BC Services Card</strong> ou un <strong className="text-muted">Basic BCeID</strong>. </p><br/>
+                                <p>Pour accéder aux Services en ligne de WorkBC, vous devez confirmer votre identité par l’un des moyens suivants : la <strong>BC Services Card</strong> ou un <strong className="text-muted">Basic BCeID</strong>. </p><br/>
                                 <h3 className="text-primary">BC Services Card</h3>
-                                <p>Pour accéder aux services offerts grâce à l’application WorkBC, vous pouvez vous connecter ou vous inscrire au moyen de la <a href="https://www2.gov.bc.ca/gov/content/governments/government-id/bcservicescardapp">BC Services Card app</a>. Le service fourni au moyen de cette application va confirmer les renseignements personnels comme votre nom et votre date de naissance et les afficher sur les écrans d’inscription si vous vous inscrivez aux services en ligne avec l’application WorkBC. Ces renseignements sont protégés sous le régime de la Loi sur l’accès à l’information et la protection de la vie privée (LAIPVP). Pour en savoir plus, lisez le  <a href="/PrivacyAndLicenseAgreementFR">contrat de licence d’utilisateur final</a>.</p><br/>
+                                <p>Pour accéder aux services offerts grâce à l’application WorkBC, vous pouvez vous connecter ou vous inscrire au moyen de la <a href="https://www2.gov.bc.ca/gov/content/governments/government-id/bcservicescardapp">BC Services Card app</a>. Le service fourni au moyen de cette application va confirmer les renseignements personnels comme votre nom et votre date de naissance et les afficher sur les écrans d’inscription si vous vous inscrivez aux services en ligne avec l’application WorkBC. Vos renseignements sont protégés sous le régime de la Loi sur l’accès à l’information et la protection de la vie privée (LAIPVP). Pour en savoir plus, lisez le  <a href="/PrivacyAndLicenseAgreementFR">contrat de licence d’utilisateur final</a>.</p><br/>
                                 <h3 className="text-primary">Basic BCeID</h3>
-                                <p>Vous pouvez également utiliser un <a href="https://www.bceid.ca/">Basic BCeID</a> pour accéder en toute sécurité aux Services en ligne de WorkBC. Si vous n’avez pas de Basic BCeID, vous pouvez en obtenir un en quelques minutes en indiquant quelques renseignements personnels comme votre nom, votre identifiant et un mot de passe. Ces renseignements sont protégés sous le régime de la Loi sur l’accès à l’information et la protection de la vie privée (LAIPVP). Pour en savoir plus, lisez le  <a href="/PrivacyAndLicenseAgreementFR">contrat de licence d’utilisateur final</a>.</p>
+                                <p>Vous pouvez également utiliser un <a href="https://www.bceid.ca/">Basic BCeID</a> pour accéder en toute sécurité aux Services en ligne de WorkBC. Si vous n’avez pas de Basic BCeID, vous pouvez en obtenir un en quelques minutes en indiquant quelques renseignements personnels comme votre nom, votre identifiant et un mot de passe. Vos renseignements sont protégés sous le régime de la Loi sur l’accès à l’information et la protection de la vie privée (LAIPVP). Pour en savoir plus, lisez le  <a href="/PrivacyAndLicenseAgreementFR">contrat de licence d’utilisateur final</a>.</p>
                             </div>
                         </div>
                     </div>

@@ -6,16 +6,20 @@ import PrivacyAndLicenseAgreement from './Components/PrivacyAndLicenseAgreement/
 import PrivacyAndLicenseAgreementFR from './Components/PrivacyAndLicenseAgreement/PrivacyAndLicenseAgreementFR'
 import BCeIDLanding from './Components/BCeIDLanding/BCeIDLanding'
 
-function Main() {
+function Main(props) {
     return (
         <main role="main">
             <Router>
                 <Switch>
-                    <Route path="/PrivacyAndLicenseAgreement" component={PrivacyAndLicenseAgreement} />
-                    <Route path="/PrivacyAndLicenseAgreementFR" component={PrivacyAndLicenseAgreementFR} />
+                    <Route path="/PrivacyAndLicenseAgreement"
+                        render={() => (<PrivacyAndLicenseAgreement {...props}/>)} />
+                    <Route path="/PrivacyAndLicenseAgreementFR" 
+                        render={() => (<PrivacyAndLicenseAgreementFR {...props}/>)} />
                     <Route path="/BCeIDLanding" component={BCeIDLanding} />
-                    <Route path="/HomeFR" component={HomeFR} />
-                    <Route path="/" component={Home} />
+                    <Route path="/HomeFR" 
+                        render={() => (<HomeFR {...props}/>)} />
+                    <Route path="/" 
+                        render={() => (<Home {...props}/>)} />
                 </Switch>
             </Router>
         </main>

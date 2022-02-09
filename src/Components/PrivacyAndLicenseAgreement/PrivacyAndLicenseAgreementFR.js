@@ -1,7 +1,10 @@
 import React from 'react'
+import PrivacyAndLicenseAgreement from './PrivacyAndLicenseAgreement';
 
-function PrivacyAndLicenseAgreementFR() {
+function PrivacyAndLicenseAgreementFR(props) {
+    props.setLanguage("fr")
     return (
+        props.language === "en" ? <PrivacyAndLicenseAgreement {...props} /> :
         <div className="container">
             <div className="row">
                 <div className="col-md-12">
