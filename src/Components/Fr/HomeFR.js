@@ -31,23 +31,23 @@ function HomeFR(props) {
                         </ul>
                         <div id="myTabContent" className="tab-content">
                             <div className={activeTab === 0? 'tab-pane fade active show': 'tab-pane fade'} id="homeFR" role="tabpanel" aria-labelledby="home-tab">
-                                    <p>La <strong>WorkBC app</strong> donne aux Britanno-Colombiens un moyen d’accéder aux services et aux mesures de soutien de WorkBC et d’en faire la demande. Vous pouvez communiquer en toute sécurité avec votre conseiller en emploi, visualiser les détails de votre dossier, consulter le tableau d’offres d’emploi de WorkBC, suivre et gérer les éléments de votre liste de choses à faire.</p>
+                                    <p>La WorkBC app donne aux Britanno-Colombiens un moyen d’accéder aux services et aux mesures de soutien de WorkBC et d’en faire la demande. Vous pouvez communiquer en toute sécurité avec votre conseiller en emploi, visualiser les détails de votre dossier, consulter le tableau d’offres d’emploi de WorkBC, suivre et gérer les éléments de votre liste de choses à faire.</p>
                                     <div className="row">
-                                        <div className="col-md-4">
+                                        <div className="col-md-4 text-center">
                                             <img 
                                             className="w-50"
                                             src="/images/screens/WorkBCAppSiteFr1.png"
                                             alt="Allons-y capture d'écran" />
                                             <br/><br/>
                                         </div>
-                                        <div className="col-md-4">
+                                        <div className="col-md-4 text-center">
                                             <img 
                                             className="w-50"
                                             src="/images/screens/WorkBCAppSiteFr2.png"
                                             alt="Que souhaitez-vous fair aujourd'hui capture d'écran" />
                                             <br/><br/>
                                         </div>
-                                        <div className="col-md-4">
+                                        <div className="col-md-4 text-center">
                                             <img 
                                             className="w-50"
                                             src="/images/screens/WorkBCAppSiteFr3.png"
@@ -107,11 +107,11 @@ function HomeFR(props) {
                                                 </div>
                                                 <div className="col-md-10">
                                                     <ol>
-                                                        <li><a href="#downloadFR" data-tab="2" onClick={()=>{handleClickActiveTab(2)}}>Téléchargez</a> la WorkBC app</li>
+                                                        <li><a href="#downloadFR" data-tab="2" onClick={()=>{handleClickActiveTab(2)}}>Téléchargez la WorkBC app</a></li>
                                                         <li>Ouvrez l’appli</li>
-                                                        <li>Sélectionnez <strong>Allons-y</strong> pour vous servir directement de l’application, ou <strong>Voir ce que vous pouvez faire</strong> pour avoir une idée des services de WorkBC</li>
-                                                        <li>Lisez et acceptez le <a href="/PrivacyAndLicenseAgreementFR">contrat de licence d’utilisateur final</a> de l’application</li>
-                                                        <li>Vous atterrirez sur l'écran, <strong>Que souhaitez-vous faire aujourd'hui?</strong></li>
+                                                        <li>Sélectionnez &#60;&#60; Allons-y &#62;&#62; pour vous servir directement de l’application, ou &#60;&#60; Voir ce que vous pouvez faire &#62;&#62; pour avoir une idée des services de WorkBC</li>
+                                                        <li>Lisez et acceptez le contrat de licence d’utilisateur final de l’application: <a href="/PrivacyAndLicenseAgreementFR">le contrat de licence d’utilisateur final</a></li>
+                                                        <li>Vous atterrirez sur l'écran, &#60;&#60; Que souhaitez-vous faire aujourd'hui? &#62;&#62;</li>
                                                     </ol>
                                                 </div>
                                             </div>
@@ -122,19 +122,23 @@ function HomeFR(props) {
                                 <div className="row">
                                         <div className="col-md-12">
                                             <div className="row">
-                                                <div className="col-md-2">
+                                                <div className="col-md-3 text-center">
                                                     <img 
                                                         className="w-75"
                                                         src="/images/screens/WorkBCAppSiteFr2.png"
                                                         alt="Que souhaitez-vous fair aujourd'hui capture d'écran" />
                                                     <br/><br/>
                                                 </div>
-                                                <div className="col-md-10">
+                                                <div className="col-md-9">
                                                     <ol>
-                                                        <li>J'<strong>ai</strong> un compte – Sélectionnez cette option si vous êtes déjà client des Services à l’emploi de WorkBC et avez actuellement ou avez déjà eu un compte auprès des Services à l’emploi en ligne.</li>
-                                                        <li>Je <strong>n'ai pas</strong> de compte – Cette option est pour les nouveaux clients des Services de WorkBC qui doivent présenter une demande ou pour les clients de WorkBC qui ne sont pas encore inscrits auprès des Services à l’emploi en ligne. Notez que vous aurez besoin de votre <strong><a href="https://www2.gov.bc.ca/gov/content/governments/government-id/bcservicescardapp">BC Services Card</a></strong> ou d’un <a href="https://www.bceid.ca">Basic BCeID</a> aux fins d’authentification.</li>
-                                                        <li>Je souhaite continuer en tant qu'<strong>invité</strong> – Si vous souhaitez vous informer des fonctionnalités de l’application sans vous connecter ni créer de compte, choisissez cette option.</li>
-                                                        <li>Je <strong>ne sais pas</strong> si j'ai un compte – Si vous n’êtes pas sûr d’avoir un compte auprès des Services en ligne de WorkBC, saisissez quelques renseignements pour le savoir.</li>
+                                                        <li>J'ai un compte – Sélectionnez cette option si vous êtes déjà client des Services à l’emploi de WorkBC et avez actuellement ou avez déjà eu un compte auprès des Services à l’emploi en ligne.</li>
+                                                        <li>Je n'ai pas de compte – Cette option est pour les nouveaux clients des Services de WorkBC qui doivent présenter une demande ou pour les clients de WorkBC qui ne sont pas encore inscrits auprès des Services à l’emploi en ligne. Notez que vous aurez besoin de votre BC Services Card ou d’un Basic BCeID aux fins d’authentification.</li>
+                                                        <ul>
+                                                            <li aria-labelledby="bullet"><a href="https://www2.gov.bc.ca/gov/content/governments/government-id/bcservicescardapp">Informations sur la BC Services Card</a></li>
+                                                            <li aria-labelledby="bullet"><a href="https://www.bceid.ca">Informations sur le Basic BCeID</a></li>
+                                                        </ul>
+                                                        <li>Je souhaite continuer en tant qu'invité – Si vous souhaitez vous informer des fonctionnalités de l’application sans vous connecter ni créer de compte, choisissez cette option.</li>
+                                                        <li>Je ne sais pas si j'ai un compte – Si vous n’êtes pas sûr d’avoir un compte auprès des Services en ligne de WorkBC, saisissez quelques renseignements pour le savoir.</li>
                                                     </ol>
                                                 </div>
                                             </div>
@@ -144,7 +148,7 @@ function HomeFR(props) {
                                  
                             </div>
                             <div className={activeTab === 2? 'tab-pane fade active show': 'tab-pane fade'} id="downloadFR">
-                                <h2>WorkBC App</h2>
+                                <h2>Téléchargez la WorkBC App</h2>
                                 <p>La WorkBC app vous mène là où vous devez aller. Téléchargez-la pour accéder aux services et aux mesures de soutien de WorkBC.</p>
                                     <div className="row">
                                         <div className="col-md-2">
@@ -191,7 +195,7 @@ function HomeFR(props) {
                                                     <div>
                                                         <ul>
                                                             <li>Les systèmes d'exploitation iOS 11 et versions supérieurs sont pris en charge</li>
-                                                            <li>Les versions bêta <u>ne sont pas</u> prises en charge</li>
+                                                            <li>Les versions bêta ne sont pas prises en charge</li>
                                                         </ul>
                                                     </div>
                                                 </div>
@@ -199,7 +203,7 @@ function HomeFR(props) {
                                                     <div>
                                                         <ul>
                                                             <li>Les systèmes d'exploitation Android 6 et versions supérieures sont pris en charge</li>
-                                                            <li>Les versions bêta <u>ne sont pas</u> prises en charge</li>
+                                                            <li>Les versions bêta ne sont pas prises en charge</li>
                                                         </ul>
                                                     </div>
                                                 </div>
@@ -214,13 +218,21 @@ function HomeFR(props) {
                                     <p>Apple, le logo d’Apple, iPhone et iPod touch sont des marques déposées d’Apple Inc. aux États-Unis et dans d’autres pays. App Store est une marque de service d’Apple Inc. déposée aux États-Unis et dans d’autres pays.</p>
                                     <p>iOS est une marque de commerce ou une marque déposée de Cisco aux États-Unis et dans d’autres pays et est utilisée sous licence.</p>
                             </div>
-                            <div className={activeTab === 3? 'tab-pane fade active show': 'tab-pane fade'} id="auth">
+                            <div className={activeTab === 3? 'tab-pane fade active show': 'tab-pane fade'} id="authFR">
                                 <h2>Authentification</h2>
-                                <p>Pour accéder aux Services en ligne de WorkBC, vous devez confirmer votre identité par l’un des moyens suivants : la <strong>BC Services Card</strong> ou un <strong className="text-muted">Basic BCeID</strong>. </p><br/>
+                                <p>Pour accéder aux Services en ligne de WorkBC, vous devez confirmer votre identité par l’un des moyens suivants : la BC Services Card ou un Basic BCeID. </p><br/>
                                 <h3 className="text-primary">BC Services Card</h3>
-                                <p>Pour accéder aux services offerts grâce à l’application WorkBC, vous pouvez vous connecter ou vous inscrire au moyen de la <a href="https://www2.gov.bc.ca/gov/content/governments/government-id/bcservicescardapp">BC Services Card app</a>. Le service fourni au moyen de cette application va confirmer les renseignements personnels comme votre nom et votre date de naissance et les afficher sur les écrans d’inscription si vous vous inscrivez aux services en ligne avec l’application WorkBC. Vos renseignements sont protégés sous le régime de la Loi sur l’accès à l’information et la protection de la vie privée (LAIPVP). Pour en savoir plus, lisez le  <a href="/PrivacyAndLicenseAgreementFR">contrat de licence d’utilisateur final</a>.</p><br/>
+                                <p>Pour accéder aux services offerts grâce à l’application WorkBC, vous pouvez vous connecter ou vous inscrire au moyen de la BC Services Card app. Le service fourni au moyen de cette application va confirmer les renseignements personnels comme votre nom et votre date de naissance et les afficher sur les écrans d’inscription si vous vous inscrivez aux services en ligne avec l’application WorkBC. Vos renseignements sont protégés sous le régime de la Loi sur l’accès à l’information et la protection de la vie privée (LAIPVP). Pour en savoir plus, lisez le contrat de licence d’utilisateur final.</p>
+                                <ul>
+                                    <li><a href="https://www2.gov.bc.ca/gov/content/governments/government-id/bcservicescardapp">Site de BC Services Card app</a></li>
+                                    <li><a href="/PrivacyAndLicenseAgreementFR">Consulter le contrat de licence d’utilisateur final</a></li>
+                                </ul><br/>
                                 <h3 className="text-primary">Basic BCeID</h3>
-                                <p>Vous pouvez également utiliser un <a href="https://www.bceid.ca/">Basic BCeID</a> pour accéder en toute sécurité aux Services en ligne de WorkBC. Si vous n’avez pas de Basic BCeID, vous pouvez en obtenir un en quelques minutes en indiquant quelques renseignements personnels comme votre nom, votre identifiant et un mot de passe. Vos renseignements sont protégés sous le régime de la Loi sur l’accès à l’information et la protection de la vie privée (LAIPVP). Pour en savoir plus, lisez le  <a href="/PrivacyAndLicenseAgreementFR">contrat de licence d’utilisateur final</a>.</p>
+                                <p>Vous pouvez également utiliser un Basic BCeID pour accéder en toute sécurité aux Services en ligne de WorkBC. Si vous n’avez pas de Basic BCeID, vous pouvez en obtenir un en quelques minutes en indiquant quelques renseignements personnels comme votre nom, votre identifiant et un mot de passe. Vos renseignements sont protégés sous le régime de la Loi sur l’accès à l’information et la protection de la vie privée (LAIPVP). Pour en savoir plus, lisez le contrat de licence d’utilisateur final.</p>
+                                <ul>
+                                    <li><a href="https://www.bceid.ca/">Site de BCeID - Basic BCeID</a></li>
+                                    <li><a href="/PrivacyAndLicenseAgreementFR">Consulter le contrat de licence d’utilisateur final</a></li>
+                                </ul>
                             </div>
                         </div>
                     </div>
