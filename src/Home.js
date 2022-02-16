@@ -30,24 +30,24 @@ function Home(props) {
                             </li>
                         </ul>
                         <div id="myTabContent" className="tab-content">
-                            <div className={activeTab === 0? 'tab-pane fade active show': 'tab-pane fade'} id="home">
-                                    <p>The <strong>WorkBC app</strong> provides British Columbians with a way to apply for and access WorkBC services and supports. You can securely message your employment counsellor, view your case details, access the WorkBC job board, and track and action items on your to-do list.</p>
+                            <div className={activeTab === 0? 'tab-pane fade active show': 'tab-pane fade'} id="home" aria-labelledby="home-tab">
+                                    <p>The WorkBC app provides British Columbians with a way to apply for and access WorkBC services and supports. You can securely message your employment counsellor, view your case details, access the WorkBC job board, and track and action items on your to-do list.</p>
                                     <div className="row">
-                                        <div className="col-md-4">
+                                        <div className="col-md-4 text-center">
                                             <img 
                                             className="w-50"
                                             src="/images/screens/WorkBCAppSiteScreensEn1.png"
                                             alt="Let's Get Started screenshot" />
                                             <br/><br/>
                                         </div>
-                                        <div className="col-md-4">
+                                        <div className="col-md-4 text-center">
                                             <img 
                                             className="w-50"
                                             src="/images/screens/WorkBCAppSiteScreensEn2.png"
                                             alt="What do you want to do today screenshot" />
                                             <br/><br/>
                                         </div>
-                                        <div className="col-md-4">
+                                        <div className="col-md-4 text-center">
                                             <img 
                                             className="w-50"
                                             src="/images/screens/WorkBCAppSiteScreensEn3.png"
@@ -122,14 +122,14 @@ function Home(props) {
                                 <div className="row">
                                         <div className="col-md-12">
                                             <div className="row">
-                                                <div className="col-md-2">
+                                                <div className="col-md-3 text-center">
                                                    <img 
                                                         className="w-75"
                                                         src="/images/screens/WorkBCAppSiteScreensEn2.png"
                                                         alt="What do you want to do today screenshot" />
                                                     <br/><br/>
                                                 </div>
-                                                <div className="col-md-10">
+                                                <div className="col-md-9">
                                                     <ol>
                                                         <li>I have an Account – Select this option if you are already a WorkBC Employment Services client and have and existing or previous account with Online Employment Services (OES).</li>
                                                         <li>I do not have an Account – This option is for those who are new to WorkBC services and need to apply, or for WorkBC clients who have not yet registered with OES. Note that you will need your BC Services Card or a Basic BCeID for authentication.</li>
