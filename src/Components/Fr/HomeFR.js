@@ -124,13 +124,13 @@ function HomeFR(props) {
                                             <div className="row">
                                                 <div className="col-md-3 text-center">
                                                     <img 
-                                                        className="w-75"
+                                                        className="w-100"
                                                         src="/images/screens/WorkBCAppSiteFr2.png"
                                                         alt="Que souhaitez-vous fair aujourd'hui capture d'écran" />
                                                     <br/><br/>
                                                 </div>
                                                 <div className="col-md-9">
-                                                    <ol>
+                                                    {/*<ol>
                                                         <li>J'ai un compte – Sélectionnez cette option si vous êtes déjà client des Services à l’emploi de WorkBC et avez actuellement ou avez déjà eu un compte auprès des Services à l’emploi en ligne.</li>
                                                         <li>Je n'ai pas de compte – Cette option est pour les nouveaux clients des Services de WorkBC qui doivent présenter une demande ou pour les clients de WorkBC qui ne sont pas encore inscrits auprès des Services à l’emploi en ligne. Notez que vous aurez besoin de votre BC Services Card ou d’un Basic BCeID aux fins d’authentification.</li>
                                                         <ul>
@@ -139,7 +139,28 @@ function HomeFR(props) {
                                                         </ul>
                                                         <li>Je souhaite continuer en tant qu'invité – Si vous souhaitez vous informer des fonctionnalités de l’application sans vous connecter ni créer de compte, choisissez cette option.</li>
                                                         <li>Je ne sais pas si j'ai un compte – Si vous n’êtes pas sûr d’avoir un compte auprès des Services en ligne de WorkBC, saisissez quelques renseignements pour le savoir.</li>
-                                                    </ol>
+                                                    </ol>*/}
+                                                    <div className="row">
+                                                        <div className="col-md-3"><h4>J'ai un compte</h4></div>
+                                                        <div className="col-md-6">Sélectionnez cette option si vous êtes déjà client des Services à l’emploi de WorkBC et avez actuellement ou avez déjà eu un compte auprès des Services à l’emploi en ligne.<br/></div>
+                                                    </div>
+                                                    <div className="row">
+                                                        <div className="col-md-3"><br/><h4>Je n'ai pas de compte</h4></div>
+                                                        <div className="col-md-6"><br/>Cette option est pour les nouveaux clients des Services de WorkBC qui doivent présenter une demande ou pour les clients de WorkBC qui ne sont pas encore inscrits auprès des Services à l’emploi en ligne. Notez que vous aurez besoin de votre BC Services Card ou d’un Basic BCeID aux fins d’authentification.
+                                                            <ul>
+                                                            <li aria-labelledby="bullet"><a href="https://www2.gov.bc.ca/gov/content/governments/government-id/bcservicescardapp">Informations sur la BC Services Card</a></li>
+                                                            <li aria-labelledby="bullet"><a href="https://www.bceid.ca">Informations sur le Basic BCeID</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div className="row">
+                                                        <div className="col-md-3"><br/><h4>Je souhaite continuer en tant qu'invité</h4></div>
+                                                        <div className="col-md-6"><br/>Si vous souhaitez vous informer des fonctionnalités de l’application sans vous connecter ni créer de compte, choisissez cette option.<br/></div>
+                                                    </div>
+                                                    <div className="row">
+                                                        <div className="col-md-3"><br/><h4>Je ne sais pas si j'ai un compte</h4></div>
+                                                        <div className="col-md-6"><br/>Si vous n’êtes pas sûr d’avoir un compte auprès des Services en ligne de WorkBC, saisissez quelques renseignements pour le savoir.<br/></div>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
