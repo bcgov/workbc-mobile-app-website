@@ -1,5 +1,5 @@
-import React from 'react'
-import OpenApp from "react-open-app";
+import React from "react"
+import OpenApp from "react-open-app"
 
 function BCeIDLanding() {
     return (
@@ -8,11 +8,7 @@ function BCeIDLanding() {
                 <div className="col-md-12">
                     <h1>Success!</h1>
                     <p>Please click the link below to go back to the mobile application, then login with your BCeID.</p>
-                    <OpenApp
-                        href="/BCeIDLanding"
-                        android={`${process.env.REACT_APP_ANDROID}`}
-                        ios={`${process.env.REACT_APP_IOS}`}
-                    >
+                    <OpenApp href="/BCeIDLanding" android={`${process.env.REACT_APP_ANDROID}`} ios={`${process.env.REACT_APP_IOS}`}>
                         Continue
                     </OpenApp>
                 </div>
@@ -34,4 +30,4 @@ function BCeIDLanding() {
     )
 }
 
-export default BCeIDLanding;
+export default BCeIDLanding
