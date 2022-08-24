@@ -5,7 +5,7 @@ import HomeFR from './Components/Fr/HomeFR'
 import PrivacyAndLicenseAgreement from './Components/PrivacyAndLicenseAgreement/PrivacyAndLicenseAgreement'
 import PrivacyAndLicenseAgreementFR from './Components/PrivacyAndLicenseAgreement/PrivacyAndLicenseAgreementFR'
 import BCeIDLanding from './Components/BCeIDLanding/BCeIDLanding'
-import AppleSiteAssociation from './apple-app-site-association.json'
+//import AppleSiteAssociation from './apple-app-site-association.json'
 
 function Main(props) {
     return (
@@ -19,10 +19,6 @@ function Main(props) {
                     <Route path="/BCeIDLanding" component={BCeIDLanding} />
                     <Route path="/HomeFR" 
                         render={() => (<HomeFR {...props}/>)} />
-                    <Route path="/.well-known/apple-app-site-association" 
-                        render={() => {
-                            return React.createElement('div', null, JSON.stringify(AppleSiteAssociation))}
-                         } />      
                     <Route path="/" 
                         render={() => (<Home {...props}/>)} />
                 </Switch>
