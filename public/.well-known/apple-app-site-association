@@ -2,7 +2,7 @@
   "applinks": {
       "details": [
            {
-             "appIDs": [ "ca.bc.gov.workbc.test" ],
+             "appIDs": [ "L796QSLV3E.ca.bc.gov.workbc.test" ],
              "paths": [ "*" ]
            }
        ]
