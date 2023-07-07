@@ -258,7 +258,7 @@ function HomeFR(props) {
                         </div>
                     </div>
                     <hr />
-                    <p className="mb-0">Si vous avez des questions, veuillez contacter <a href="mailto:WorkBCAppSupport@gov.bc.ca">WorkBCAppSupport@gov.bc.ca</a></p>
+                    <p className="mb-0">Si vous avez des questions, veuillez contacter <a href="mailto:WorkBC.support@gov.bc.ca">WorkBC.support@gov.bc.ca</a></p>
                 </div>
             </div>
         </div>
