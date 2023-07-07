@@ -124,13 +124,13 @@ function Home(props) {
                                             <div className="row">
                                                 <div className="col-md-3 text-center">
                                                    <img 
-                                                        className="w-75"
+                                                        className="w-100"
                                                         src="/images/screens/WorkBCAppSiteScreensEn2.png"
                                                         alt="What do you want to do today screenshot" />
                                                     <br/><br/>
                                                 </div>
                                                 <div className="col-md-9">
-                                                    <ol>
+                                                    {/*<ol>
                                                         <li>I have an Account – Select this option if you are already a WorkBC Employment Services client and have and existing or previous account with Online Employment Services (OES).</li>
                                                         <li>I do not have an Account – This option is for those who are new to WorkBC services and need to apply, or for WorkBC clients who have not yet registered with OES. Note that you will need your BC Services Card or a Basic BCeID for authentication.</li>
                                                         <ul>
@@ -139,7 +139,28 @@ function Home(props) {
                                                         </ul>
                                                         <li>I want to continue as a Guest – If you want to see what app features are available without logging in or creating an account, choose this option.</li>
                                                         <li>I don’t know if I have an Account – If you are unsure if you have an account with WorkBC online services, enter a few pieces of information to find out.</li>
-                                                    </ol>
+                                                    </ol>*/}
+                                                     <div className="row">
+                                                        <div className="col-md-3"><h4>I have an Account</h4></div>
+                                                        <div className="col-md-6">Select this option if you are already a WorkBC Employment Services client AND have and existing or previous account with Online Employment Services (OES).<br/></div>
+                                                    </div>
+                                                    <div className="row">
+                                                        <div className="col-md-3"><br/><h4>I do not have an Account</h4></div>
+                                                        <div className="col-md-6"><br/>This option is for those who are new to WorkBC services and need to apply, or for WorkBC clients who have not yet registered with OES. Note that you will need your BC Services Card or a Basic BCeID for authentication.
+                                                            <ul>
+                                                                <li aria-labelledby="bullet"><a href="https://www2.gov.bc.ca/gov/content/governments/government-id/bcservicescardapp">Information on BC Services Card</a></li>
+                                                                <li aria-labelledby="bullet"><a href="https://www.bceid.ca">Information on Basic BCeID</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div className="row">
+                                                        <div className="col-md-3"><br/><h4>I want to continue as a Guest</h4></div>
+                                                        <div className="col-md-6"><br/>If you want to see what app features are available without logging in or creating an account, choose this option.<br/></div>
+                                                    </div>
+                                                    <div className="row">
+                                                        <div className="col-md-3"><br/><h4>I don’t know if I have an Account</h4></div>
+                                                        <div className="col-md-6"><br/>If you are unsure if you have an account with WorkBC online services, enter a few pieces of information to find out.<br/></div>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -245,7 +266,7 @@ function Home(props) {
                         </div>
                     </div>
                     <hr />
-                    <p className="mb-0">If you have questions, please contact <a href="mailto:WorkBCAppSupport@gov.bc.ca">WorkBCAppSupport@gov.bc.ca</a></p>
+                    <p className="mb-0">If you have questions, please contact <a href="mailto:WorkBC.support@gov.bc.ca">WorkBC.support@gov.bc.ca</a></p>
                 </div>
             </div>
         </div>

@@ -1,0 +1,10 @@
+{
+  "applinks": {
+      "details": [
+           {
+             "appIDs": [ "L796QSLV3E.ca.bc.gov.workbc.test" ],
+             "paths": [ "*" ]
+           }
+       ]
+   }
+}
