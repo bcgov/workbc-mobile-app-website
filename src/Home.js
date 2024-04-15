@@ -146,10 +146,14 @@ function Home(props) {
                                                     </div>
                                                     <div className="row">
                                                         <div className="col-md-3"><br/><h4>I do not have an Account</h4></div>
-                                                        <div className="col-md-6"><br/>This option is for those who are new to WorkBC services and need to apply, or for WorkBC clients who have not yet registered with OES. Note that you will need your BC Services Card or a Basic BCeID for authentication.
+                                                        <div className="col-md-6">
+                                                            <br/>
+                                                            If you are new to WorkBC services and need to apply, or you are a WorkBC client that has not registered with OES, you will need to set up an account.
+                                                            <br/>
+                                                            <b>Note: </b>First, you will need set up a BC Services Card Login or register for a Basic BCeID for authentication.
                                                             <ul>
-                                                                <li aria-labelledby="bullet"><a href="https://www2.gov.bc.ca/gov/content/governments/government-id/bcservicescardapp">Information on BC Services Card</a></li>
-                                                                <li aria-labelledby="bullet"><a href="https://www.bceid.ca">Information on Basic BCeID</a></li>
+                                                                <li aria-labelledby="bullet"><a href="https://www2.gov.bc.ca/gov/content/governments/government-id/bcservicescardapp">Learn how to set up the BC Services Card Login</a></li>
+                                                                <li aria-labelledby="bullet"><a href="https://www.bceid.ca">Learn how to register for a Basic BCeID</a></li>
                                                             </ul>
                                                         </div>
                                                     </div>
@@ -249,17 +253,17 @@ function Home(props) {
                             </div>
                             <div className={activeTab === 3? 'tab-pane fade active show': 'tab-pane fade'}  id="auth">
                                 <h2>Authentication</h2>
-                                <p>In order to access WorkBC online services, you must confirm your identity through one of the following forms: BC Services Card or Basic BCeID. </p><br/>
-                                <h3 className="text-primary">BC Services Card</h3>
-                                <p>To access services provided through the WorkBC app, you can log in or register using the BC Services Card app. The service provided through this app will confirm personal information such as your name and date of birth, and will populate this information on registration screens if you are registering for online services through the WorkBC app. Your information is protected under the Freedom of Information and Protection of Privacy Act (FOIPPA). To learn more: </p>
+                                <p>In order to access WorkBC online services, you must confirm your identity through one of the following forms: BC Services Card Login or Basic BCeID. </p><br/>
+                                <h3 className="text-primary">BC Services Card Login</h3>
+                                <p>To access services provided through the WorkBC app, you can log in or register using the BC Services Card Login. The service provided through this app will confirm personal information such as your name and date of birth, and will populate this information on registration screens if you are registering for online services through the WorkBC app. Your information is protected under the Freedom of Information and Protection of Privacy Act (FOIPPA).</p>
                                 <ul>
-                                    <li><a href="https://www2.gov.bc.ca/gov/content/governments/government-id/bcservicescardapp">BC Services Card app site</a></li>
+                                    <li><a href="https://www2.gov.bc.ca/gov/content/governments/government-id/bcservicescardapp">Learn how to set up and use the BC Services Card Login</a></li>
                                     <li><a href="/PrivacyAndLicenseAgreement">Review the End User License Agreement</a></li>
                                 </ul><br/>
                                 <h3 className="text-primary">Basic BCeID</h3>
-                                <p>You can also use a Basic BCeID to securely access WorkBC online services. If you don’t have a Basic BCeID, you can get set up in minutes by providing some personal information such as your name, user ID and a password. Your information is protected under the Freedom of Information and Protection of Privacy Act (FOIPPA). To learn more:</p>
+                                <p>You can also use a Basic BCeID to securely access WorkBC online services. If you don’t have a Basic BCeID, you can register for one in minutes by providing some personal information such as your name, user ID and a password. Your information is protected under the Freedom of Information and Protection of Privacy Act (FOIPPA). To learn more:</p>
                                 <ul>
-                                    <li><a href="https://www.bceid.ca/">BCeID site - Basic BCeID</a></li>
+                                    <li><a href="https://www.bceid.ca/">Learn how to register and use Basic BCeID</a></li>
                                     <li><a href="/PrivacyAndLicenseAgreement">Review the End User License Agreement</a></li>
                                 </ul>
                             </div>
