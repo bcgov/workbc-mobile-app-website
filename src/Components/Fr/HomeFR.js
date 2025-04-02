@@ -28,6 +28,9 @@ function HomeFR(props) {
                             <li className="nav-item">
                                 <a className={activeTab === 3? 'nav-link active show': 'nav-link'} id="auth-tab" data-toggle="tab" href="#authFR"onClick={()=>{handleClickActiveTab(3)}}>Authentification</a>
                             </li>
+                            <li className="nav-item">
+                                <a className={activeTab === 4? 'nav-link active show': 'nav-link'} id="delete-tab" data-toggle="tab" href="#deleteFR"onClick={()=>{handleClickActiveTab(4)}}>Suppression de compte</a>
+                            </li>
                         </ul>
                         <div id="myTabContent" className="tab-content">
                             <div className={activeTab === 0? 'tab-pane fade active show': 'tab-pane fade'} id="homeFR" role="tabpanel" aria-labelledby="home-tab">
@@ -253,6 +256,14 @@ function HomeFR(props) {
                                 <ul>
                                     <li><a href="https://www.bceid.ca/">Site de BCeID - Basic BCeID</a></li>
                                     <li><a href="/PrivacyAndLicenseAgreementFR">Consulter le contrat de licence d’utilisateur final</a></li>
+                                </ul>
+                            </div>
+                            <div className={activeTab === 4? 'tab-pane fade active show': 'tab-pane fade'}  id="deleteFR">
+                                <h2>Demandes de suppression de compte</h2>
+                                <ul>
+                                    <li>Lorsque vous êtes connecté à l'application WorkBC, cliquez sur le menu et choisissez Supprimer le compte.</li>
+                                    <li>Vous serez dirigé vers la page « Supprimer votre compte ».</li>
+                                    <li>Sélectionnez « Oui » sur la page « Supprimer votre compte » et confirmez la demande de suppression lorsque vous y êtes invité.</li>
                                 </ul>
                             </div>
                         </div>

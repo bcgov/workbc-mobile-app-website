@@ -1,9 +1,13 @@
 import React, {useState} from 'react'
+import { useParams, useLocation } from 'react-router';
 import HomeFR from './Components/Fr/HomeFR';
 
 function Home(props) {
     props.setLanguage("en")
-    const [activeTab, setActiveTab] = useState(0)
+    const { URLParam } = useParams()
+    console.log(URLParam)
+    const startingTab = URLParam === "delete" ? 4 : 0
+    const [activeTab, setActiveTab] = useState(startingTab)
     const handleClickActiveTab = (e) => {
         setActiveTab(e)
     }
@@ -27,6 +31,9 @@ function Home(props) {
                             </li>
                             <li className="nav-item" role="tab">
                                 <a className={activeTab === 3? 'nav-link active show': 'nav-link'} data-tab="3" id="auth-tab" data-toggle="tab" href="#auth" onClick={()=>{handleClickActiveTab(3)}}>Authentication</a>
+                            </li>
+                            <li className="nav-item" role="tab">
+                                <a className={activeTab === 4? 'nav-link active show': 'nav-link'} data-tab="4" id="delete-tab" data-toggle="tab" href="#delete" onClick={()=>{handleClickActiveTab(4)}}>Account Deletion</a>
                             </li>
                         </ul>
                         <div id="myTabContent" className="tab-content">
@@ -265,6 +272,14 @@ function Home(props) {
                                 <ul>
                                     <li><a href="https://www.bceid.ca/">Learn how to register and use Basic BCeID</a></li>
                                     <li><a href="/PrivacyAndLicenseAgreement">Review the End User License Agreement</a></li>
+                                </ul>
+                            </div>
+                            <div className={activeTab === 4? 'tab-pane fade active show': 'tab-pane fade'}  id="delete">
+                                <h2>Account Deletion Requests</h2>
+                                <ul>
+                                    <li><a>When signed into the WorkBC App, click on the Menu and choose Delete Account</a></li>
+                                    <li><a>You will be directed to the ‘Delete Your Account’ page</a></li>
+                                    <li><a>Select ‘Yes’ on the ‘Delete Your Account’ page, and confirm the Delete request when prompted</a></li>
                                 </ul>
                             </div>
                         </div>

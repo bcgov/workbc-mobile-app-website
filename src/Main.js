@@ -23,7 +23,9 @@ function Main(props) {
                     <Route path="/BCeIDLanding" component={BCeIDLanding} />
                     <Route path="/HomeFR" 
                         render={() => (<HomeFR {...props}/>)} />
-                    <Route path="/" 
+                    <Route path="/:URLParam"
+                        render={() => (<Home {...props}/>)} />
+                    <Route path="/"
                         render={() => (<Home {...props}/>)} />
                 </Switch>
             </Router>
