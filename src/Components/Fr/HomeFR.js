@@ -261,10 +261,26 @@ function HomeFR(props) {
                             <div className={activeTab === 4? 'tab-pane fade active show': 'tab-pane fade'}  id="deleteFR">
                                 <h2>Demandes de suppression de compte</h2>
                                 <ul>
-                                    <li>Lorsque vous êtes connecté à l'application WorkBC, cliquez sur le menu et choisissez Supprimer le compte.</li>
-                                    <li>Vous serez dirigé vers la page « Supprimer votre compte ».</li>
+                                    <li>Lorsque vous êtes connecté à l'application WorkBC, cliquez sur le menu et choisissez Supprimer le compte:</li>
+                                    <div className="col-md-6 text-center">
+                                        <img 
+                                        className="w-50"
+                                        src="/images/screens/sidebar-menu.png"
+                                        alt="What do you want to do today screenshot" />
+                                        <br/><br/>
+                                    </div>
+                                    <li>Vous serez dirigé vers la page « Supprimer votre compte »:</li>
+                                    <div className="col-md-6 text-center">
+                                        <img 
+                                        className="w-50"
+                                        src="/images/screens/delete-account.png"
+                                        alt="What do you want to do today screenshot" />
+                                        <br/><br/>
+                                    </div>
                                     <li>Sélectionnez « Oui » sur la page « Supprimer votre compte » et confirmez la demande de suppression lorsque vous y êtes invité.</li>
                                 </ul>
+
+                                <h4>Les données que vous fournissez ne sont pas supprimées. Pour de plus amples informations sur la collecte et la conservation des données, veuillez vous référer à <a href="/PrivacyAndLicenseAgreement">l'accord de licence de l'utilisateur final</a></h4>
                             </div>
                         </div>
                     </div>

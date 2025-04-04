@@ -277,10 +277,26 @@ function Home(props) {
                             <div className={activeTab === 4? 'tab-pane fade active show': 'tab-pane fade'}  id="delete">
                                 <h2>Account Deletion Requests</h2>
                                 <ul>
-                                    <li><a>When signed into the WorkBC App, click on the Menu and choose Delete Account</a></li>
-                                    <li><a>You will be directed to the ‘Delete Your Account’ page</a></li>
-                                    <li><a>Select ‘Yes’ on the ‘Delete Your Account’ page, and confirm the Delete request when prompted</a></li>
+                                    <li>While signed into the WorkBC App, go to the Menu and select 'Delete Account':</li>
+                                    <div className="col-md-6 text-center">
+                                        <img 
+                                        className="w-50"
+                                        src="/images/screens/sidebar-menu.png"
+                                        alt="What do you want to do today screenshot" />
+                                        <br/><br/>
+                                    </div>
+                                    <li>You will be directed to the ‘Delete Your Account’ screen:</li>
+                                    <div className="col-md-6 text-center">
+                                        <img 
+                                        className="w-50"
+                                        src="/images/screens/delete-account.png"
+                                        alt="What do you want to do today screenshot" />
+                                        <br/><br/>
+                                    </div>
+                                    <li>Select ‘Yes’ on the ‘Delete Your Account’ screen, and confirm the Delete request when prompted</li>
                                 </ul>
+
+                                <h4>The data you provide is not deleted. For further information on data collection and retention, please refer to the <a href="/PrivacyAndLicenseAgreement">End User License Agreement</a></h4>
                             </div>
                         </div>
                     </div>
