@@ -281,16 +281,16 @@ function Home(props) {
                                     <div className="col-md-6 text-center">
                                         <img 
                                         className="w-50"
-                                        src="/images/screens/sidebar-menu.png"
-                                        alt="What do you want to do today screenshot" />
+                                        src="/images/screens/sidebar-menu-EN.png"
+                                        alt="Sidebar menu screenshot" />
                                         <br/><br/>
                                     </div>
                                     <li>You will be directed to the ‘Delete Your Account’ screen:</li>
                                     <div className="col-md-6 text-center">
                                         <img 
                                         className="w-50"
-                                        src="/images/screens/delete-account.png"
-                                        alt="What do you want to do today screenshot" />
+                                        src="/images/screens/account-delete-EN.png"
+                                        alt="Account delete screenshot" />
                                         <br/><br/>
                                     </div>
                                     <li>Select ‘Yes’ on the ‘Delete Your Account’ screen, and confirm the Delete request when prompted</li>

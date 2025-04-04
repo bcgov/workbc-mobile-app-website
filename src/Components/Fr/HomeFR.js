@@ -265,16 +265,16 @@ function HomeFR(props) {
                                     <div className="col-md-6 text-center">
                                         <img 
                                         className="w-50"
-                                        src="/images/screens/sidebar-menu.png"
-                                        alt="What do you want to do today screenshot" />
+                                        src="/images/screens/sidebar-menu-FR.png"
+                                        alt="Sidebar menu screenshot" />
                                         <br/><br/>
                                     </div>
                                     <li>Vous serez dirigé vers la page « Supprimer votre compte »:</li>
                                     <div className="col-md-6 text-center">
                                         <img 
                                         className="w-50"
-                                        src="/images/screens/delete-account.png"
-                                        alt="What do you want to do today screenshot" />
+                                        src="/images/screens/account-delete-FR.png"
+                                        alt="Account delete screenshot" />
                                         <br/><br/>
                                     </div>
                                     <li>Sélectionnez « Oui » sur la page « Supprimer votre compte » et confirmez la demande de suppression lorsque vous y êtes invité.</li>
